@@ -6,6 +6,7 @@ import services from './services'
 import projects from './projects'
 import posts from './posts'
 import reviews from './reviews'
+import clients from './clients'
 
 export default createSchema({
   name: 'default',
@@ -15,6 +16,7 @@ export default createSchema({
     services,
     projects,
     posts,
-    reviews
+    reviews,
+    clients
   ]),
 })
