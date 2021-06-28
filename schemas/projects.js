@@ -10,6 +10,18 @@ export default {
             validation: Rule => Rule.required()
         },
         {
+            title: 'Client Logo',
+            name: 'clientLogo',
+            type: 'image',
+            validation: Rule => Rule.required()
+        },
+        {
+            title: 'Client URL',
+            name: 'clientUrl',
+            type: 'url',
+            validation: Rule => Rule.required()
+        },
+        {
             title: 'Hero Image',
             name: 'heroImage',
             type: 'image',
@@ -31,6 +43,12 @@ export default {
             title: 'Project Image',
             name: 'projectImage',
             type: 'image',
+            validation: Rule => Rule.required()
+        },
+        {
+            title: "Client Review",
+            name: "clientReview",
+            type: "text",
             validation: Rule => Rule.required()
         },
         {
