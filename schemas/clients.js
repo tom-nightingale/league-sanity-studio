@@ -1,6 +1,6 @@
 export default {
     title: "Clients",
-    name: 'clients',
+    name: 'client',
     type: "document",
     fields: [
         {

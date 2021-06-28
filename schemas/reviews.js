@@ -4,9 +4,28 @@ export default {
     type: "document",
     fields: [
         {
-            title: "Title",
-            name: "title",
+            title: "Name",
+            name: "name",
             type: "string",
+            validation: Rule => Rule.required()
+        },
+        {
+            title: "Company",
+            name: "company",
+            type: "array",
+            of: [
+                {
+                    type: 'reference',
+                    to: [
+                        {type: 'client'},
+                    ]
+                }
+            ]
+        },
+        {
+            title: "Review",
+            name: "review",
+            type: "text",
             validation: Rule => Rule.required()
         },
     ]
