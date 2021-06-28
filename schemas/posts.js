@@ -10,6 +10,20 @@ export default {
             validation: Rule => Rule.required()
         },
         {
+            title: 'Post Date',
+            name: 'postDate',
+            type: 'date',
+            options: {
+                dateFormat: 'DD-MM-YYYY',
+                calendarTodayLabel: 'Today'
+            },
+        },
+        {
+            title: "Content",
+            name: "content",
+            type: "text",
+        },
+        {
             title: 'Slug',
             name: 'slug',
             type: 'slug',
